@@ -1,5 +1,18 @@
-extends layout
+extend layout
+
+
+block navbar
+
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .div(class="container")
+        .div(class="row")
+            .div(class="col-md-12")
+                main.inner.cover(role='main')
+                    h1.cover-heading Sessions
+                    p.lead
+                        .div(class="row")
+                            .div(class="col-md-6")
+                                a.btn.btn-lg.btn-secondary(href='/login') Login
+                            .div(class="col-md-6")
+                                a.btn.btn-lg.btn-secondary(href='/register') Register

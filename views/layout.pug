@@ -1,35 +1,26 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    link(rel='icon', href='../public/images/favicon.ico')
-    title Cover Template for Bootstrap
-    // Bootstrap core CSS
-    link(href='../public/stylesheets/bootstrap.css', rel='stylesheet')
-    // Custom styles for this template
-    link(href='../public/stylesheets/cover.css', rel='stylesheet')
-  body.text-center
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(rel='icon', href='../public/images/favicon.ico')
+        title Sessions
+        // Bootstrap core CSS
+        link(href='../public/stylesheets/bootstrap.css', rel='stylesheet')
+        // Custom styles for this template
+        link(href='../public/stylesheets/cover.css', rel='stylesheet')
+        block css
+body.text-center
     .cover-container.d-flex.h-100.p-3.mx-auto.flex-column
-      header.masthead.mb-auto
-        .inner
-          h3.masthead-brand Cover
-          nav.nav.nav-masthead.justify-content-center
-            a.nav-link.active(href='#') Home
-            a.nav-link(href='#') Features
-            a.nav-link(href='#') Contact
-      main.inner.cover(role='main')
-        h1.cover-heading Cover your page.
-        p.lead
-          block content
-        p.lead
-          a.btn.btn-lg.btn-secondary(href='#') Learn more
-      footer.mastfoot.mt-auto
-        .inner
-          p
-            | Pat Pat's Gang
+        block navbar
+            header.masthead.mb-auto
+                .inner
+                    h3.masthead-brand Sessions
+                    nav.nav.nav-masthead.justify-content-center
+                        block navbaroptions
+        block content
     //
       Bootstrap core JavaScript
       ==================================================
@@ -38,3 +29,4 @@ html(lang='en')
         window.jQuery || document.write('<script src="../public/javascripts/jquery-3.2.1.slim.min.js"><\\/script>')
     script(src='../public/javascripts/popper.js')
     script(src='../public/javascripts/bootstrap.min.js')
+    block javascript
